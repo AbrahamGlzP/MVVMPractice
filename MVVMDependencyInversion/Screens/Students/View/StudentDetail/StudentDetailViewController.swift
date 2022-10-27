@@ -16,9 +16,15 @@ enum StudentInfo: String {
 
 class StudentDetailViewController: UIViewController {
   
-  var studentViewModel: StudentCellViewModel?
+  var studentViewModel: StudentCellViewModel? {
+    didSet {
+      
+    }
+  }
   
   let detailStackView = UIStackView()
+  
+  let userImage = UIImageView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +36,7 @@ class StudentDetailViewController: UIViewController {
     title = "Detail"
     navigationController?.navigationBar.prefersLargeTitles = true
     configureStackView()
+    setupImage()
   }
   
   private func configureStackView() {
@@ -40,6 +47,18 @@ class StudentDetailViewController: UIViewController {
     
     setStackViewConstraints()
     addItemsToStackView()
+  }
+  
+  func setupImage() {
+    view.addSubview(userImage)
+    userImage.translatesAutoresizingMaskIntoConstraints = false
+    
+    userImage.bottomAnchor.constraint(equalTo: detailStackView.topAnchor, constant: -20).isActive = true
+    userImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    userImage.heightAnchor.constraint(equalToConstant: 80).isActive = true
+    userImage.widthAnchor.constraint(equalTo: userImage.heightAnchor, multiplier: 4/3).isActive = true
+    
+    userImage.image = studentViewModel?.image
   }
   
   private func setStackViewConstraints() {
