@@ -25,6 +25,8 @@
 		08B2107D2903555E00815091 /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B2107C2903555E00815091 /* StudentsViewController.swift */; };
 		08B21080290355C400815091 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B2107F290355C400815091 /* StudentTableViewCell.swift */; };
 		08B210842903569100815091 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B210832903569100815091 /* UIView+Extension.swift */; };
+		08E36B00292550C6004AE785 /* StudentDetailBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E36AFF292550C6004AE785 /* StudentDetailBoxViewController.swift */; };
+		08E36B0229255120004AE785 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E36B0129255120004AE785 /* Box.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		08B2107C2903555E00815091 /* StudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
 		08B2107F290355C400815091 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		08B210832903569100815091 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		08E36AFF292550C6004AE785 /* StudentDetailBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailBoxViewController.swift; sourceTree = "<group>"; };
+		08E36B0129255120004AE785 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 		0878BCA92906FDAA00F873E7 /* StudentDetail */ = {
 			isa = PBXGroup;
 			children = (
+				08E36AFF292550C6004AE785 /* StudentDetailBoxViewController.swift */,
 				0878BCA7290649F400F873E7 /* StudentDetailViewController.swift */,
 				0878BCAA2906FDDD00F873E7 /* StudentInfoView.swift */,
 			);
@@ -195,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				08B210832903569100815091 /* UIView+Extension.swift */,
+				08E36B0129255120004AE785 /* Box.swift */,
 			);
 			path = "Extensions+Utilities";
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0878BC9C2905F04100F873E7 /* ServiceError.swift in Sources */,
+				08E36B00292550C6004AE785 /* StudentDetailBoxViewController.swift in Sources */,
 				0878BC992905EF7E00F873E7 /* StudentServiceProtocol .swift in Sources */,
 				0878BCA8290649F400F873E7 /* StudentDetailViewController.swift in Sources */,
 				08B21068290354A300815091 /* AppDelegate.swift in Sources */,
@@ -282,6 +289,7 @@
 				08B2107D2903555E00815091 /* StudentsViewController.swift in Sources */,
 				0878BCA62905FB8D00F873E7 /* StudentCellViewModel.swift in Sources */,
 				08B210842903569100815091 /* UIView+Extension.swift in Sources */,
+				08E36B0229255120004AE785 /* Box.swift in Sources */,
 				08B21080290355C400815091 /* StudentTableViewCell.swift in Sources */,
 				0878BCAB2906FDDD00F873E7 /* StudentInfoView.swift in Sources */,
 				0878BCA22905F5D900F873E7 /* StudentService.swift in Sources */,
